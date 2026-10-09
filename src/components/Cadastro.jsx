@@ -12,7 +12,7 @@ function Cadastro({ onCadastrar }) {
       return;
     }
 
-    if(nome.length < 3){
+    if(nome.trim().length < 3){
       setErro("Nome inválido")
       return
     }
