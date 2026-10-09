@@ -10,12 +10,6 @@ export function filtrarPorTurma(alunos, turma) {
   return alunos.filter((a) => a.turma === turma);
 }
 
-export function calcularMedia(alunos) {
-  if (alunos.length === 0) return null;
-  const soma = alunos.reduce((total, a) => total + a.nota, 0);
-  return soma / alunos.length;
-}
-
 export function situacao(nota) {
   return nota >= notaMinima ? "Aprovado" : "Em recuperação";
 }
